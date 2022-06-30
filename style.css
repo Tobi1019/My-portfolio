@@ -447,3 +447,522 @@ form textarea{
         height: auto;
     }
 }
+
+/*=======================================================MEDIAQUERIES FOR SMALL SCREENS==========================================================*/
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    header {
+        padding: 18px 4%;
+        transition: .2s;
+    }
+    header.sticky {
+        padding: 10px 4%;
+        transition: .3s;
+    }
+    section {
+        padding: 80px 4%;
+        transition: .2s;
+    }
+     :root {
+        --big-font: 4.8rem;
+        --h2-font: 3.8rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+  
+  }
+  
+  @media (max-width: 990px) {
+    .home {
+        height: 85vh;
+    }
+    .navbar {
+        position: absolute;
+        top: 700px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .30s;
+    }
+    .navbar a {
+        display: block;
+        padding: 1.1rem;
+        margin: 1.3rem;
+        border-left: 2px solid var(--text-color);
+    }
+    .navbar a:hover {
+        background: purple;
+    }
+    .navbar a::after {
+        display: none;
+    }
+    .navbar.active {
+        top: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) and (min-width: 320px) {
+    html,
+    body {
+        width: 140%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .home {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+    }
+    .home-text {
+        margin: 3% 0% 0% 5%;
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+    section {
+        padding: 0;
+    }
+    .section-title {
+        padding-top: 30%;
+    }
+    p {
+        font-size: 1.6rem;
+        width: 98%;
+        margin-top: 5%;
+        text-align: left;
+    }
+    .home-img {
+        margin: auto;
+    }
+    .home-img img {
+        font-size: 2em;
+    }
+    .input-field {
+        width: 180px;
+        height: 40px;
+        margin-top: 20px;
+        padding: 25px;
+        border-radius: 4px;
+        font-size: 1.2rem;
+    }
+    button {
+        border-radius: 4px;
+        padding: 15px 20px;
+        font-size: 1.2rem;
+    }
+    .section-a {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        grid-gap: 2rem;
+    }
+    .section-a p {
+        font-size: 2em;
+    }
+    .section-a h3 {
+        font-size: 2.8em;
+    }
+    .section-title h1 {
+        font-size: 2.2em;
+    }
+    .about {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        border: 1px solid transparent;
+        padding-top: 5%;
+    }
+    .about-text {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+    .about-text p {
+        font-size: 1.65rem;
+        padding: 4px;
+    }
+   .about-text h2{
+    font-size: 2.8em;
+   }
+   .about-text h5{
+    font-size: 2.8em;
+   }
+.services {
+        min-height: 100vh;
+        height: 100%;
+        width: 100;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-left: 5%;
+    }
+    .services h1 {
+        font-size: 2.5em;
+    }
+    .services p {
+        font-size: 1.7rem;
+        line-height: 1.8;
+    }
+    .services-content h3{
+        font-size: 2.8em;
+    }
+    .services-content p{
+        font-size: 2.8em;
+    }
+
+
+    .services-content .row {
+        margin: auto;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .services-content .row h3 {
+        font-size: 2.2rem;
+        margin-bottom: .5rem;
+    }
+    .services-content .row p {
+        font-size: 2.2rem;
+        margin-bottom: .5rem;
+    }
+  
+    .projects {
+        text-align: center;
+        margin-left: 5%;
+        line-height: 1.6;
+    }
+    .projects p{
+        font-size: 2.8em;
+    }
+    .projects h2{
+        font-size: 2.8em;
+    }
+
+
+    .projects h2::before {
+        content: attr(data-title);
+        display: block;
+        font-size: 1.7rem;
+        text-align: center;
+        color: grey;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 4px;
+        font-weight: 700;
+    }
+    .projects img {
+        width: 700px;
+        margin-left: -2%;
+    }
+    .projects-content h5{
+        font-size: 2.8em;
+    }
+    .projects-content p{
+        font-size: 2.8em;
+    }
+
+    .footer {
+        width: 100%;
+        height: 50vh;
+    }
+  }
+  
+  
+  /*=======================================================MEDIAQUERIES FOR MEDIUM SCREENS==========================================================*/
+  
+  @media only screen and (max-width: 768px) and (min-width: 481px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .home {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0rem;
+        min-height: 65vh;
+    }
+    .home-text {
+        margin: -25% 0% 0% 5%;
+        font-size: 5rem;
+        line-height: 1.2;
+        word-spacing: 1px;
+    }
+    section {
+        padding: 0;
+    }
+    p {
+        font-size: 1.7rem;
+        width: 98%;
+        margin-top: 5%;
+        text-align: left;
+    }
+    .home-img {
+        margin: auto;
+        margin-top: -50%;
+        margin-bottom: -20%;
+        padding: 0;
+    }
+    .home-img img {
+        font-size: 2.5em;
+    }
+    .input-field {
+        width: 240px;
+        height: 40px;
+        margin-top: 20px;
+        padding: 30px;
+        border-radius: 4px;
+        font-size: 1.6rem;
+    }
+    button {
+        border-radius: 4px;
+        padding: 15px 20px;
+        font-size: 1.6rem;
+    }
+    .section-a {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        grid-gap: 2rem;
+    }
+    .section-a p {
+        font-size: 2.5rem;
+    }
+    .section-a h3 {
+        font-size: 3.1rem;
+    }
+    .section-title h2 {
+        font-size: 2.6rem;
+    }
+    .about {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        border: 1px solid transparent;
+        padding-top: 5%;
+    }
+    .about-content {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+    .about-content p {
+        font-size: 2.2rem;
+        padding: 4px;
+    }
+    .about-content h2 {
+        font-size: 3rem;
+        padding: 4px;
+    }
+    .about-content h5{
+        font-size: 3rem;
+        padding: 4px;
+    }
+    .about-img{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        margin-top: 90rem;
+        border-radius: 80%;
+    }
+    
+    /*services SECTION */
+    .services {
+        min-height: 100vh;
+        height: 100%;
+        width: 100;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-left: 5%;
+    }
+    .center h2{
+        font-size: 3rem;
+        padding: 4px;
+    }
+    .center p{
+        font-size: 3rem;
+        padding: 4px;
+    }
+
+    .services-content h3{
+        font-size: 3rem;
+        width: 95%;
+    }
+    .services-content p{
+        font-size: 2.3rem;
+        line-height: 1.8;
+    }
+    
+    
+    .footer {
+        width: 100%;
+        height: 29vh;
+    }
+  }
+  
+  
+  /*=======================================================MEDIAQUERIES FOR LARGER SCREENS==========================================================*/
+  
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .home {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0rem;
+        min-height: 90vh;
+    }
+    .home-text {
+        margin: -20% 0% 0% 5%;
+        font-size: 5.2rem;
+        line-height: 1.2;
+        word-spacing: 1px;
+        width: 95%;
+    }
+    section {
+        padding: 0;
+    }
+    p {
+        font-size: 2rem;
+        width: 98%;
+        margin-top: 5%;
+        text-align: left;
+    }
+    .home-img {
+        margin: auto;
+        margin-top: -50%;
+        margin-bottom: -30%;
+        padding: 0;
+    }
+    .home-img img {
+        width: 800px;
+    }
+    button {
+        border-radius: 4px;
+        padding: 15px 20px;
+        font-size: 1.6rem;
+    }
+    /*SECTION ONE QUERIES FOR SMALLER SCREEN */
+    .section-a {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        grid-gap: 2rem;
+    }
+    .section-a p {
+        font-size: 2.4rem;
+    }
+    .section-a h5 {
+        font-size: 3.1rem;
+    }
+    .section-a h2 {
+        font-size: 2.8rem;
+    }
+    .section-a a{
+        font-size: 2.8rem;
+    }
+    /*SECTION B QUERIES FOR SMALLER SCREEN */
+    .services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        border: 1px solid transparent;
+        padding-top: 5%;
+    }
+    .services-content {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+    .services-content p {
+        font-size: 2.2rem;
+        padding: 4px;
+    }
+    .services-content h2 {
+        font-size: 3.2rem;
+        padding: 4px;
+    }
+    .services-content h3 {
+        margin-right: 20px;
+    }
+    }
+    .row{
+        background: #06ec98;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+
+
+    /*contact section*/
+    .contact {
+        min-height: 100vh;
+        height: 100%;
+        width: 100;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-left: 5%;
+    }
+    .contact-form h2 {
+        font-size: 3rem;
+        width: 95%;
+    }
+    .contact-form p {
+        font-size: 2.3rem;
+        line-height: 1.8;
+    }
+    .contact img {
+        width: 960px;
+        margin-left: -2%;
+    }
+    .input-field {
+        width: 240px;
+        height: 40px;
+        margin-top: 20px;
+        padding: 30px;
+        border-radius: 4px;
+        font-size: 1.6rem;
+    }
+    
+    
+    
+    .footer {
+        width: 100%;
+        height: 20vh;
+    }
+  
+  @media (max-width: 1270px) {
+    header {
+        padding: 18px 4%;
+        transition: .2s;
+    }
+    header.sticky {
+        padding: 10px 4%;
+        transition: .2s;
+    }
+    section {
+        padding: 80px 4%;
+        transition: .2s;
+    }
+     :root {
+        --big-font: 4.8rem;
+        --h2-font: 3.8rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+  }
