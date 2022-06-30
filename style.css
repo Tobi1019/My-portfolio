@@ -475,33 +475,7 @@ form textarea{
   @media (max-width: 990px) {
     .home {
         height: 85vh;
-    }
-    .navbar {
-        position: absolute;
-        top: 700px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        background: var(--bg-color);
-        text-align: left;
-        transition: all .30s;
-    }
-    .navbar a {
-        display: block;
-        padding: 1.1rem;
-        margin: 1.3rem;
-        border-left: 2px solid var(--text-color);
-    }
-    .navbar a:hover {
-        background: purple;
-    }
-    .navbar a::after {
-        display: none;
-    }
-    .navbar.active {
-        top: 100%;
-    }
-  }
+      }
   
   @media only screen and (max-width: 480px) and (min-width: 320px) {
     html,
@@ -520,12 +494,10 @@ form textarea{
         margin: 3% 0% 0% 5%;
         font-size: 4rem;
         line-height: 1.2;
-    }
-    section {
         padding: 0;
     }
-    .section-title {
-        padding-top: 30%;
+    .home-img {
+        margin: auto;
     }
     p {
         font-size: 1.6rem;
@@ -533,12 +505,7 @@ form textarea{
         margin-top: 5%;
         text-align: left;
     }
-    .home-img {
-        margin: auto;
-    }
-    .home-img img {
-        font-size: 2em;
-    }
+    
     .input-field {
         width: 180px;
         height: 40px;
@@ -552,22 +519,7 @@ form textarea{
         padding: 15px 20px;
         font-size: 1.2rem;
     }
-    .section-a {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        grid-gap: 2rem;
-    }
-    .section-a p {
-        font-size: 2em;
-    }
-    .section-a h3 {
-        font-size: 2.8em;
-    }
-    .section-title h1 {
-        font-size: 2.2em;
-    }
+
     .about {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -708,9 +660,6 @@ form textarea{
         margin-bottom: -20%;
         padding: 0;
     }
-    .home-img img {
-        font-size: 2.5em;
-    }
     .input-field {
         width: 240px;
         height: 40px;
@@ -723,23 +672,7 @@ form textarea{
         border-radius: 4px;
         padding: 15px 20px;
         font-size: 1.6rem;
-    }
-    .section-a {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        grid-gap: 2rem;
-    }
-    .section-a p {
-        font-size: 2.5rem;
-    }
-    .section-a h3 {
-        font-size: 3.1rem;
-    }
-    .section-title h2 {
-        font-size: 2.6rem;
-    }
+      }
     .about {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -782,11 +715,11 @@ form textarea{
         align-items: center;
         margin-left: 5%;
     }
-    .center h2{
+    .services h2{
         font-size: 3rem;
         padding: 4px;
     }
-    .center p{
+    .services p{
         font-size: 3rem;
         padding: 4px;
     }
@@ -855,23 +788,23 @@ form textarea{
         font-size: 1.6rem;
     }
     /*SECTION ONE QUERIES FOR SMALLER SCREEN */
-    .section-a {
+    .home {
         position: relative;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         grid-gap: 2rem;
     }
-    .section-a p {
+    .home-text p {
         font-size: 2.4rem;
     }
-    .section-a h5 {
+    .home-text h1 {
         font-size: 3.1rem;
     }
-    .section-a h2 {
+    .home-text h4 {
         font-size: 2.8rem;
     }
-    .section-a a{
+    .home-text 3{
         font-size: 2.8rem;
     }
     /*SECTION B QUERIES FOR SMALLER SCREEN */
