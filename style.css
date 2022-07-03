@@ -287,6 +287,10 @@ header.sticky{
     font-size: var(--p-font);
     margin-bottom: 15px;
 }
+.small{
+    font-size:smaller;
+    font-weight: 200;
+}
 .box h5{
     color: var(--text-color);
     font-size: 18px;
@@ -368,7 +372,24 @@ form textarea{
     font-size: 17px;
     color: var(--second-color);
     letter-spacing: 1px;
+    text-align: center;
 }
+progress{
+    height: 5px;
+    border-radius: 20px;
+    width:80%;
+}
+progress::-webkit-progress-value {
+    background-color: var(--main-color);
+    
+    
+}
+progress::-webkit-progress-bar {
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+
 
 @media (max-width: 1270px){
     header{
@@ -444,10 +465,11 @@ form textarea{
   
   }
   
-  @media (max-width: 990px) {
+  @media (max-width: 990px){
     .home {
         height: 85vh;
       }
+    }
   
   @media only screen and (max-width: 480px) and (min-width: 320px) {
     html,
@@ -568,6 +590,7 @@ form textarea{
     .projects h2{
         font-size: 2.8em;
     }
+
 
 
     .projects h2::before {
@@ -762,6 +785,7 @@ form textarea{
         padding: 15px 20px;
         font-size: 1.6rem;
     }
+}
     /*SECTION ONE QUERIES FOR SMALLER SCREEN */
     .home {
         position: relative;
@@ -779,7 +803,7 @@ form textarea{
     .home-text h4 {
         font-size: 2.8rem;
     }
-    .home-text 3{
+    .home-text h3{
         font-size: 2.8rem;
     }
     /*SECTION B QUERIES FOR SMALLER SCREEN */
@@ -803,7 +827,8 @@ form textarea{
         padding: 4px;
     }
     .services-content h3 {
-        margin-right: 20px;
+        font-size: 3.2rem;
+        padding: 4px;
     }
  
     
@@ -847,7 +872,7 @@ form textarea{
         height: 20vh;
     }
   
-  @media (max-width: 1270px) {
+  @media (max-width: 1270px){
     header {
         padding: 18px 4%;
         transition: .2s;
