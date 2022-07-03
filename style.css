@@ -855,14 +855,21 @@ progress::-webkit-progress-bar {
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         margin-left: 5%;
+      
     }
     .contact-form h2 {
         font-size: 3rem;
         width: 95%;
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: 100;
     }
     .contact-form p {
         font-size: 2.3rem;
         line-height: 1.8;
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: 100;
     }
     .contact img {
         width: 960px;
@@ -875,8 +882,16 @@ progress::-webkit-progress-bar {
         padding: 30px;
         border-radius: 4px;
         font-size: 1.6rem;
+        font-family: sans-serif;
     }
-    
+.center p,h2{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.logo{
+    font-weight: 100;
+}
     
     
     .footer {
