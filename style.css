@@ -386,7 +386,7 @@ progress::-webkit-progress-value {
 }
 progress::-webkit-progress-bar {
     background-color: whitesmoke;
-    border-radius: 8px;
+   
 }
 
 
@@ -798,40 +798,52 @@ progress::-webkit-progress-bar {
         font-size: 2.4rem;
     }
     .home-text h1 {
-        font-size: 3.1rem;
+        font-size: 2.2rem;
     }
     .home-text h4 {
-        font-size: 2.8rem;
+        font-size: 2rem;
     }
     .home-text h3{
-        font-size: 2.8rem;
+        font-size: 1.5rem;
     }
+    .home-text form{
+        font-size: 2.2rem;
+    }
+    .about-text h5{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 100;
+        text-align: center;
+    }
+    .about-text h2{
+        font-family:sans-serif;
+        font-weight: 100;
+        text-align: center;
+    }
+    .about-text p{
+        font-family: sans-serif;
+        font-weight: 100;
+        text-align: center;
+    }
+
     /*SECTION B QUERIES FOR SMALLER SCREEN */
     .services {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
+        display: grid;  
+        grid-gap: 10px;
         border: 1px solid transparent;
-        padding-top: 5%;
+        padding-top: 2%;
     }
-    .services-content {
-        margin-top: 20px;
-        padding-top: 15px;
+    .services-content h3{
+        font-size: 1rem;
     }
-    .services-content p {
-        font-size: 2.2rem;
-        padding: 4px;
+    .services p{
+        font-size:25px;
+        padding: 20px;
+        text-align: center;
     }
-    .services-content h2 {
-        font-size: 3.2rem;
-        padding: 4px;
-    }
-    .services-content h3 {
-        font-size: 3.2rem;
-        padding: 4px;
-    }
- 
-    
+.services-content .progress-bar{
+   flex-wrap: nowrap;
+   
+}
 
     /*contact section*/
     .contact {
@@ -891,4 +903,6 @@ progress::-webkit-progress-bar {
         --p-font: 1rem;
         transition: .2s;
     }
+
+
   }
