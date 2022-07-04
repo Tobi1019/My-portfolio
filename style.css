@@ -391,7 +391,7 @@ progress::-webkit-progress-bar {
 
 
 
-@media (max-width: 320px){
+@media (max-width: 1270px){
     header{
         padding:18px 4%;
         transition: .2s;
@@ -443,7 +443,7 @@ progress::-webkit-progress-bar {
 
 /*=======================================================MEDIAQUERIES FOR SMALL SCREENS==========================================================*/
 
-@media only screen and (max-width: 480px) and (min-width: 320px) {
+@media only screen and (max-width: 320px) and (min-width: 360px) {
     header {
         padding: 18px 4%;
         transition: .2s;
@@ -465,13 +465,13 @@ progress::-webkit-progress-bar {
   
   }
   
-  @media (max-width: 320px){
+  @media (max-width: 380px){
     .home {
         height: 85vh;
       }
     }
   
-  @media only screen and (max-width: 320px) and (min-width: 480px) {
+  @media only screen and (max-width: 480px) and (min-width: 360px) {
     html,
     body {
         width: 140%;
