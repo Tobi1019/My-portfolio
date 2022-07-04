@@ -388,64 +388,12 @@ progress::-webkit-progress-bar {
     background-color: whitesmoke;
    
 }
-
-
-
-@media (max-width: 1270px){
-    header{
-        padding:18px 4%;
-        transition: .2s;
-    }
-    header.sticky{
-        padding: 10px 4%;
-        transition: .2s;
-    }
-    section{
-        padding: 80px 4%;
-        transition: .2s;
-    }
-     :root{
-        --big-font:4.8rem;
-        --h2-font:3.8rem;
-        --p-font:1rem;
-        transition: .2s;
-     }
-}
-
-@media (max-width: 990px){
-    .home{
-        height: 85vh;
-    }
-    .about{
-        grid-template-columns: 1fr;
-    }
-    .about-img{
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    .about-img img{
-        max-width: 100%;
-        width: 700px;
-        height: auto;
-    }
-    .contact{
-        grid-template-columns: 1fr;
-    }
-    .contact-form{
-        order: 2;
-    }
-    .box img{
-        max-width: 100%;
-        width: 760px;
-        height: auto;
-    }
-}
-
+   
 /*=======================================================MEDIAQUERIES FOR SMALL SCREENS==========================================================*/
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
     header {
-        padding: 18px 4%;
+        padding: 18px;
         transition: .2s;
     }
     header.sticky {
