@@ -413,9 +413,6 @@ progress::-webkit-progress-bar {
 }
 
 @media (max-width: 990px){
-    .home{
-        height: 85vh;
-    }
 html,
     body {
         width: 140%;
@@ -432,8 +429,7 @@ html,
         grid-gap: 2rem;
     }
     .home-text {
-        margin: 3% 0% 0% 5%;
-        font-size: 4rem;
+        font-size: 1.5rem;
         line-height: 1.2;
         padding: 0;
     }
@@ -448,10 +444,10 @@ html,
     }
     
     .input-field {
-        width: 180px;
-        height: 40px;
+        width: 100px;
+        height: 20px;
         margin-top: 20px;
-        padding: 25px;
+        padding: 15px;
         border-radius: 4px;
         font-size: 1.2rem;
     }
@@ -482,6 +478,10 @@ html,
    .about-text h5{
     font-size: 2.8em;
    }
+. about-img{ 
+width: 700px;
+        margin-left: -3%;
+}
 .services {
         min-height: 100vh;
         height: 100%;
@@ -549,7 +549,7 @@ html,
     }
     .projects img {
         width: 700px;
-        margin-left: -2%;
+        margin-left: -3%;
     }
     .projects-content h5{
         font-size: 2.8em;
