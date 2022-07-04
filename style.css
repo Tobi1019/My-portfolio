@@ -443,7 +443,7 @@ progress::-webkit-progress-bar {
 
 /*=======================================================MEDIAQUERIES FOR SMALL SCREENS==========================================================*/
 
-@media only screen and (max-width:480px) and (min-width: 360px) {
+@media only screen and (max-width:990px) and (min-width: 360px) {
     header {
         padding: 18px 4%;
         transition: .2s;
@@ -471,7 +471,7 @@ progress::-webkit-progress-bar {
       }
     }
   
-  @media only screen and (max-width: 360px) and (min-width: 990px) {
+  @media only screen and (max-width: 990px) and (min-width: 360px) {
     html,
     body {
         width: 140%;
