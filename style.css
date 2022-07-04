@@ -416,6 +416,193 @@ progress::-webkit-progress-bar {
     .home{
         height: 85vh;
     }
+html,
+    body {
+        width: 140%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+      .navbar{
+  display: none;
+ }
+    .home {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+    }
+    .home-text {
+        margin: 3% 0% 0% 5%;
+        font-size: 4rem;
+        line-height: 1.2;
+        padding: 0;
+    }
+    .home-img {
+        margin: auto;
+    }
+    p {
+        font-size: 1.6rem;
+        width: 98%;
+        margin-top: 5%;
+        text-align: left;
+    }
+    
+    .input-field {
+        width: 180px;
+        height: 40px;
+        margin-top: 20px;
+        padding: 25px;
+        border-radius: 4px;
+        font-size: 1.2rem;
+    }
+    button {
+        border-radius: 4px;
+        padding: 15px 20px;
+        font-size: 1.2rem;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        border: 1px solid transparent;
+        padding-top: 5%;
+    }
+    .about-text {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+    .about-text p {
+        font-size: 1.65rem;
+        padding: 4px;
+    }
+   .about-text h2{
+    font-size: 2.8em;
+   }
+   .about-text h5{
+    font-size: 2.8em;
+   }
+.services {
+        min-height: 100vh;
+        height: 100%;
+        width: 100;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-left: 5%;
+    }
+    .services h1 {
+        font-size: 2.5em;
+    }
+    .services p {
+        font-size: 1.7rem;
+        line-height: 1.8;
+    }
+    .services-content h3{
+        font-size: 2.8em;
+    }
+    .services-content p{
+        font-size: 2.8em;
+    }
+
+
+    .services-content .row {
+        margin: auto;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .services-content .row h3 {
+        font-size: 2.2rem;
+        margin-bottom: .5rem;
+    }
+    .services-content .row p {
+        font-size: 2.2rem;
+        margin-bottom: .5rem;
+    }
+  
+    .projects {
+        text-align: center;
+        margin-left: 5%;
+        line-height: 1.6;
+    }
+    .projects p{
+        font-size: 2.8em;
+    }
+    .projects h2{
+        font-size: 2.8em;
+    }
+
+
+
+    .projects h2::before {
+        content: attr(data-title);
+        display: block;
+        font-size: 1.7rem;
+        text-align: center;
+        color: grey;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 4px;
+        font-weight: 700;
+    }
+    .projects img {
+        width: 700px;
+        margin-left: -2%;
+    }
+    .projects-content h5{
+        font-size: 2.8em;
+    }
+    .projects-content p{
+        font-size: 2.8em;
+    }
+
+    .footer {
+        width: 100%;
+        height: 50vh;
+    }
+  }
+  
+  
+  /*=======================================================MEDIAQUERIES FOR MEDIUM SCREENS==========================================================*/
+  
+  @media only screen and (max-width: 668px) and (min-width: 320px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .home {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0rem;
+        min-height: 65vh;
+    }
+    .home-text {
+        margin: -25% 0% 0% 5%;
+        font-size: 5rem;
+        line-height: 1.2;
+        word-spacing: 1px;
+    }
+    section {
+        padding: 0;
+    }
+    p {
+        font-size: 1.7rem;
+        width: 98%;
+        margin-top: 5%;
+        text-align: left;
+    }
+    .home-img {
+        margin: auto;
+        margin-top: -50%;
+        margin-bottom: -20%;
+        padding: 0;
+    }
+    .input-field {
     .about{
         grid-template-columns: 1fr;
     }
@@ -443,7 +630,7 @@ progress::-webkit-progress-bar {
 
 /*=======================================================MEDIAQUERIES FOR SMALL SCREENS==========================================================*/
 
-@media only screen and (max-width:990px) and (min-width: 360px) {
+@media only screen and (max-width:480px) and (min-width: 360px) {
     header {
         padding: 18px 4%;
         transition: .2s;
@@ -471,7 +658,7 @@ progress::-webkit-progress-bar {
       }
     }
   
-  @media only screen and (max-width: 990px) and (min-width: 360px) {
+  @media only screen and (max-width: 360px) and (min-width: 990px) {
     html,
     body {
         width: 140%;
